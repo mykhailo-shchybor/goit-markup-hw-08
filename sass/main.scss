@@ -1,0 +1,24 @@
+// utils styles
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+
+// base styles
+@import "./base/base";
+@import "./base/reset";
+@import "./base/container";
+
+
+// layout styles
+@import "./layouts/heder";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/customers";
+@import "./layouts/footer";
+@import "./layouts/footer-subscribe";
+
+
+// component styles
+@import "./components/checkbox";
+@import "./components/modal-window";

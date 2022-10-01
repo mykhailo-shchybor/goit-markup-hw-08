@@ -1,0 +1,56 @@
+.hero {
+	background: var(--bg-hero-footer);
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hw-four/back-hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.hero-title {
+	margin-top: 0;
+	margin-bottom: auto;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary-white-color)
+}
+
+.hero-button {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 10px 32px;
+	margin-top: 30px;
+	cursor: pointer;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+	border: none;
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+
+
+	transition: background-color var(--anim-fast),
+		color var(--anim-fast);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background-color: var(--primary-white-color);
+	color: var(--title-text-color);
+}
