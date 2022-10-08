@@ -103,12 +103,7 @@ img {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: red;
 }
 
 .logo {
@@ -265,6 +260,12 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
 }
 
 .hero-title {
@@ -451,33 +452,71 @@ img {
   color: var(--primary-white-color);
 }
 
-.section-team {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background: var(--bg-button-team);
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.team-list {
+.team {
+  background: var(--bg-button-team);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.team-list .item:not(:last-child) {
-  margin-right: 30px;
+.team-img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 1170px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-list .item {
-  width: 270px;
+  width: 450px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-list .item {
+    width: 354px;
+    gap: 30px;
+  }
 }
 
 .team-title {

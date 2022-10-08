@@ -30,52 +30,62 @@
     <!--Шапка -->
 
     <!-- <header class="header">
-      <div class="container nav">
+      <div class="container">
         <nav class="nav">
           <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
-
           <ul class="menu-nav">
             <li class="item"><a class="heder-link current" href="./index.html">Студія</a></li>
             <li class="item"><a class="heder-link" href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a class="heder-link" href="">Контакти</a></li>
           </ul>
+          <div class="authentication">
+            <ul class="list-contact">
+              <li class="item">
+                <a class="hed-link" href="malito:info@devstudio.com">
+                  <svg class="envelope" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a class="hed-link" href="tel:+380961111111">
+                  <svg class="smartphone" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <div class="authentication">
-          <ul class="list-contact">
-            <li class="item">
-              <a class="hed-link" href="malito:info@devstudio.com">
-                <svg class="envelope" width="16" height="12">
-                  <use href="./images/icons.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a class="hed-link" href="tel:+380961111111">
-                <svg class="smartphone" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        <button
+          type="button"
+          class="burger-button-open menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="" width="40" height="40" aria-label="перемикач мобільного меню">
+            <use class="icon-menu" href="./images/icons.svg#menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header> -->
 
-    <!-- Меін -->
+    <!-- MAIN -->
 
     <main class="main">
-      <!-- Герой -->
+      <!-- HERO -->
 
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero-title">
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
 
         <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
-      </section> -->
+      </section>
 
       <!-- Особливості -->
 
@@ -153,7 +163,7 @@
 
       <!-- Чим ми займаємося -->
 
-      <!-- <section class="section-work">
+      <section class="section-work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
 
@@ -188,12 +198,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- Наша команда -->
+      <!-- TEAM -->
 
-      <!-- <section class="section-team">
-        <div class="container">
+      <section class="section">
+        <div class="container team">
           <h2 class="team-title">Наша команда</h2>
 
           <ul class="team-list">
@@ -446,7 +456,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Постійні клієнти -->
@@ -676,5 +686,61 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <!-- mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu burger__button-close">
+        <svg width="40" height="40">
+          <use href="./js/mobile-menu.js#close-burger"></use>
+        </svg>
+      </button>
+      <ul class="burger-menu__nav">
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link burger-menu__nav-link--current" href="./index.html"
+            >Студія</a
+          >
+        </li>
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="burger-menu__contacts">
+        <li class="burger-menu__contacts-item">
+          <a
+            class="burger-menu__contacts-link burger-menu__contacts-link--current"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="burger-menu__contacts-item">
+          <a class="burger-menu__contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="burger-menu__socials">
+        <li class="burger-menu__socials-item">
+          <a class="burger-menu__socials-link" href="#">Instagram</a>
+        </li>
+        <li class="burger-menu__socials-item">
+          <a class="burger-menu__socials-link" href="#">Twitter</a>
+        </li>
+        <li class="burger-menu__socials-item">
+          <a class="burger-menu__socials-link" href="#">Facebook</a>
+        </li>
+        <li class="burger-menu__socials-item">
+          <a class="burger-menu__socials-link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
