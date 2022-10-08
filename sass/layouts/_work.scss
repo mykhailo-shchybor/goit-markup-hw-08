@@ -1,4 +1,10 @@
 .section-work {
+	@media screen and (max-width:768px) {
+		display: none;
+	}
+}
+
+.section-work {
 	padding-bottom: 94px;
 }
 
