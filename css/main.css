@@ -556,19 +556,6 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 768px) {
-  .customers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
 .customers_title {
   font-weight: 700;
   font-size: 36px;
@@ -583,7 +570,36 @@ img {
     margin-bottom: 30px;
   }
 }
-.customers_link {
+@media screen and (min-width: 480px) {
+  .customers_title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.customers-list_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,26 +616,26 @@ img {
   -webkit-transition: border var(--anim-fast);
   transition: border var(--anim-fast);
 }
-@media screen and (min-width: 768px) {
-  .customers_link {
-    width: 226px;
-  }
-}
-.customers_icon {
+.customers-list_icon {
   fill: var(--social-link-color);
   -webkit-transition: fill var(--anim-fast);
   transition: fill var(--anim-fast);
 }
-.customers_link:hover, .customers_link:focus {
+.customers-list_link:hover, .customers-list_link:focus {
   border: 1px solid var(--accent-color);
 }
-.customers_link:hover .customers_icon, .customers_link:focus .customers_icon {
+.customers-list_link:hover .customers-list_icon, .customers-list_link:focus .customers-list_icon {
   fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .customers_item {
+  .customers-list_item {
     width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers-list_item {
+    width: 170px;
   }
 }
 
