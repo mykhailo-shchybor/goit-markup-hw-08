@@ -118,4 +118,48 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+}
+
+.subscribe_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  -webkit-transition: background-color var(--anim-fast);
+  transition: background-color var(--anim-fast);
+}
+
+.subscribe_img {
+  margin-left: 10px;
+  fill: var(--primary-white-color);
+}
+
+.subscribe-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  display: block;
+  margin-bottom: 20px;
+  display: inline-block;
 }/*# sourceMappingURL=portfolio.css.map */

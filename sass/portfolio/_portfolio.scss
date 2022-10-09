@@ -125,3 +125,40 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 }
+
+.subscribe_btn {
+	display: -webkit-box;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+		letter-spacing: .06em;
+		width: 200px;
+		height: 50px;
+		background-color: var(--accent-color);
+		border: none;
+		box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+		border-radius: 4px;
+		color: var(--primary-white-color);
+		transition: background-color var(--anim-fast);
+}
+
+.subscribe_img {
+	margin-left: 10px;
+	fill: var(--primary-white-color);
+}
+
+.subscribe-label {
+	font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: var(--primary-white-color);
+		display: block;
+		margin-bottom: 20px;
+		display: inline-block;
+}
