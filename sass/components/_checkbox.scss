@@ -4,6 +4,10 @@
 	justify-content: center;
 	margin-bottom: 20px;
 	gap: 9px;
+
+	// @media screen and (max-width: 480px) {
+	// 		width: 370px;
+	// 	}
 }
 
 .box-in:checked+.checkbox-icon .icon-checked {
