@@ -3,18 +3,21 @@
 	display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+
+		@media screen and (min-width: 768px) {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				align-items: center;
+			}
+
 		@media screen and (min-width: 1200px) {
 				display: flex;
 				flex-direction: column;
+				align-items: flex-start;
 			}
-
-						@media screen and (min-width: 768px) {
-							display: flex;
-							flex-wrap: wrap;
-							flex-direction: column;
-							align-items: center;
-						}
-}
+		}
+						
 .subscribe-title {
 	font-weight: 700;
 	font-size: 14px;
