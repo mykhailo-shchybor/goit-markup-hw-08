@@ -15,6 +15,8 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-white-color);
 	transition: color var(--anim-fast);
+	height: 28px;
+	margin-top: 60px;
 }
 
 .footer-logo:hover,
@@ -29,6 +31,12 @@
 .footer-nav {
 	margin-top: 0;
 	margin-bottom: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .footer-nav .item:not(:last-child) {
@@ -92,21 +100,25 @@
 }
 
 .footer-container {
-
 	display: flex;
-	align-items: baseline
+	align-content: center;
+	flex-direction: column;
 }
 
 .foot-contact {
 	display: flex;
 		gap: 10px;
 		justify-content: center;
-	// margin-right: 70px;
+	margin-bottom: 41px;
+	flex-direction: column;
+		align-items: center;
 }
 
 .foot-social {
-	// display: flex;
-	// flex-direction: column;
+   margin-bottom: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .foot-social-list {
@@ -133,6 +145,7 @@
 	fill: var(--primary-white-color);
 	transition: fill var(--anim-fast);
 }
+
 
 /* footer button */
 .form-btn {
@@ -162,3 +175,4 @@
 .form-btn:focus {
 	background-color: var(--button-hover);
 }
+	

@@ -506,7 +506,6 @@ img {
 }
 
 .team-list .item {
-  width: 450px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -709,6 +708,8 @@ img {
   color: var(--primary-white-color);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
+  height: 28px;
+  margin-top: 60px;
 }
 
 .footer-logo:hover,
@@ -723,6 +724,23 @@ img {
 .footer-nav {
   margin-top: 0;
   margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-nav .item:not(:last-child) {
@@ -791,9 +809,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .foot-contact {
@@ -804,6 +825,28 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 41px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot-social {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .foot-social-list {
@@ -865,10 +908,17 @@ img {
 }
 
 .footer-subscribe {
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.subscribe-label {
+.subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -877,6 +927,7 @@ img {
   color: var(--primary-white-color);
   display: block;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .subscribe {
@@ -884,6 +935,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .subscribe_in {
   width: 358px;
@@ -897,6 +956,7 @@ img {
   outline: transparent;
   color: var(--primary-white-color);
   padding: 15px 16px;
+  margin-bottom: 20px;
 }
 .subscribe_holder {
   position: absolute;
@@ -925,7 +985,8 @@ img {
   -webkit-transform: translate(-1.1rem, -2ex) scale(70%);
           transform: translate(-1.1rem, -2ex) scale(70%);
 }
-.subscribe_btn {
+
+.footer-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -951,10 +1012,13 @@ img {
   -webkit-transition: background-color var(--anim-fast);
   transition: background-color var(--anim-fast);
 }
-.subscribe_btn:hover, .subscribe_btn:focus {
+
+.footer-btn:hover,
+.footer-btn:focus {
   background-color: var(--button-hover);
 }
-.subscribe_img {
+
+.footer-btn-img {
   margin-left: 10px;
   fill: var(--primary-white-color);
 }
