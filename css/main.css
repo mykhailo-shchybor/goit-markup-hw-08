@@ -102,10 +102,27 @@ img {
   border-bottom: 1px solid var(--border-color);
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
+}
+
+.heder-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -164,21 +181,50 @@ img {
   margin-right: 50px;
 }
 
-.authentication {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .authentication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .authentication .item + .item {
   margin-left: 30px;
 }
 
-.list-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .list-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: 46px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
 }
 
 .heder-link {
@@ -206,6 +252,32 @@ img {
   color: var(--primary-text-color);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
+}
+
+.hed-link1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  -webkit-transition: color var(--anim-fast);
+  transition: color var(--anim-fast);
+}
+@media screen and (min-width: 768px) {
+  .hed-link1 {
+    padding-bottom: 0;
+  }
 }
 
 .heder-link.current {
