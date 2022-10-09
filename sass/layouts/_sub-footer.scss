@@ -3,6 +3,10 @@
 	display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		@media screen and (min-width: 1200px) {
+				display: flex;
+				flex-direction: column;
+			}
 }
 .subscribe-title {
 	font-weight: 700;
@@ -14,6 +18,7 @@
 	display: block;
 	margin-bottom: 20px;
 	display: inline-block;
+	
 }
 
 .subscribe {
@@ -22,6 +27,12 @@
 	flex-direction: column;
 	margin-bottom: 60px;
 	align-items: center;
+
+	@media screen and (min-width: 1200px) {
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			}
 
 	&_in {
 			width: 450px;
