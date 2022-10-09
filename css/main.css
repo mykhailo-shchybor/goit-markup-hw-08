@@ -262,11 +262,6 @@ img {
   margin-right: auto;
   max-width: 450px;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-  }
-}
 
 .hero-title {
   margin-top: 0;
@@ -805,7 +800,21 @@ img {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -985,6 +994,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1040,6 +1052,7 @@ img {
   color: var(--primary-white-color);
   padding: 15px 16px;
   margin-bottom: 20px;
+  margin-right: 12px;
 }
 @media screen and (min-width: 1200px) {
   .subscribe_in {
