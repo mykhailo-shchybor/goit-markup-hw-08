@@ -860,9 +860,11 @@ img {
 }
 
 .icon-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -945,7 +947,7 @@ img {
           align-items: center;
 }
 .subscribe_in {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

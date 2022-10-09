@@ -128,11 +128,13 @@
 }
 
 .icon-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
+	font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
 	color: var(--primary-white-color);
 	margin-bottom: 20px;
 }
