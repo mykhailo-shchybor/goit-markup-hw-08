@@ -92,23 +92,27 @@
 }
 
 .footer-container {
+
 	display: flex;
 	align-items: baseline
 }
 
 .foot-contact {
-	margin-right: 70px;
+	display: flex;
+		gap: 10px;
+		justify-content: center;
+	// margin-right: 70px;
 }
 
 .foot-social {
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 }
 
 .foot-social-list {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+		display: flex;
+		gap: 10px;
+		justify-content: center;
 }
 
 .icon-title {
