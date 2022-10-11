@@ -1,21 +1,24 @@
-@import "./utils/variables";
+// utils styles
+@import "./utils/vars";
 @import "./utils/visually-hidden";
-@import "./utils/placeholders";
-@import "./utils/buttons";
-@import "./components/body";
-@import "./components/header/header";
-@import "./components/header/header-site-nav";
-@import "./components/header/header-auth-nav";
-@import "./components/header/header-burger-menu";
-@import "./components/header/header-burger-menu-content";
-@import "./components/hero";
-@import "./components/feature";
-@import "./components/work-list";
-@import "./components/staff";
-@import "./components/clients";
-@import "./components/footer/footer";
-@import "./components/footer/footer-socials";
-@import "./components/footer/footer-form";
-@import "./components/modal/backdrop";
-@import "./components/modal/modal";
-@import "./components/modal/modal-form";
+@import "./utils/mixins";
+
+// base styles
+@import "./base/base";
+@import "./base/reset";
+@import "./base/container";
+
+
+// layout styles
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/customers";
+@import "./layouts/footer";
+@import "./layouts/sub-footer";
+
+// component styles
+@import "./components/checkbox";
+@import "./components/modal-window";

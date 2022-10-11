@@ -1,0 +1,10 @@
+@mixin section($padding: 60px) {
+	padding-top: $padding;
+	padding-bottom: $padding;
+
+	// for example
+	// .features {
+    //    @include section;
+	// }
+	
+}

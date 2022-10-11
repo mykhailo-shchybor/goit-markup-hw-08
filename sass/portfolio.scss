@@ -1,17 +1,2 @@
 // layouts styles
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/placeholders";
-@import "./components/body";
-@import "./components/header/header";
-@import "./components/header/header-site-nav";
-@import "./components/header/header-auth-nav";
-@import "./components/header/header-burger-menu";
-@import "./components/header/header-burger-menu-content";
-@import "./utils/buttons";
-@import "./components/portfolio/portfolio-main";
-@import "./components/portfolio/portfolio-buttons";
-@import "./components/portfolio/portfolio-cards";
-@import "./components/footer/footer";
-@import "./components/footer/footer-socials";
-@import "./components/footer/footer-form";
+@import "./portfolio/portfolio";
