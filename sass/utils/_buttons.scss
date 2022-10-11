@@ -1,0 +1,27 @@
+%button {
+	display: inline-block;
+	border-radius: 4px;
+	padding: 6px 22px;
+	color: $title-text-color;
+	background-color: $staff-bg-color;
+	border: 1px solid transparent;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.03em;
+	cursor: pointer;
+	transition: box-shadow 250ms $timing-function,
+		background-color 250ms $timing-function, color 250ms $timing-function;
+}
+
+%button-primary {
+	color: $primary-white-color;
+	background-color: $button-bg-color;
+}
+
+%button-secondary {
+	color: $title-text-color;
+	background-color: $staff-bg-color;
+}

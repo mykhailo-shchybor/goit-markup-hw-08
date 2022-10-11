@@ -1,0 +1,97 @@
+.hero {
+	background-color: $hero-bg-color;
+	text-align: center;
+	max-width: 1600px;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@media screen and (max-width: 576px) {
+		background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(//images/hero/hero-mobile@1x.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(//images/hero/hero-mobile@2x.jpg);
+		}
+	}
+
+	@media screen and (min-width: 577px) and (max-width: 960px) {
+		background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(//images/hero/hero-tablet@1x.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(//images/hero/hero-tablet@2x.jpg);
+		}
+	}
+
+	@media screen and (min-width: 961px) {
+		height: 600px;
+		padding: 200px 0px;
+		background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(//images/hero/hero-desc@1x.jpg);
+
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url(//images/hero/hero-desc@2x.jpg);
+		}
+	}
+}
+
+.hero__container {
+	@extend %container;
+}
+
+.hero__title {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: $primary-white-color;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: calc(42 / 26);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	@media screen and (max-width: 1199px) {
+		max-width: 360px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 696px;
+		font-size: 44px;
+		line-height: calc(60 / 44);
+	}
+}
+
+.hero__button {
+	@extend %button;
+	@extend %button-primary;
+	min-width: 200px;
+	padding: 10px 24px;
+	font-weight: 700;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+
+	&:hover,
+	&:focus {
+		@extend %button-secondary;
+	}
+
+	@media screen and (min-width: 1200px) {
+		min-width: 216px;
+		padding: 10px 32px;
+	}
+}

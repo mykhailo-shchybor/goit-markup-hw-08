@@ -1,0 +1,43 @@
+.portfolio__buttons {
+	@extend %list;
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+
+	@media screen and (max-width: 767px) {
+		max-width: 340px;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 30px;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
+}
+
+.portfolio__button--primary {
+	@extend %button-primary;
+	@extend %button;
+
+	&:hover,
+	&:focus {
+		box-shadow: $button-portfolio-shadow;
+		@extend %button-secondary;
+	}
+}
+
+.portfolio__button--secondary {
+	max-width: 130px;
+	@extend %button-secondary;
+	@extend %button;
+
+	&:hover,
+	&:focus {
+		box-shadow: $button-portfolio-shadow;
+		@extend %button-primary;
+	}
+}
